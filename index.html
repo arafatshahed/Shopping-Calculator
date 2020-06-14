@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hisheb</title>
+    <script src="./app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body onload="myFunction()">
+    <div class="container">
+      <h2>Pacific Trade International</h2>
+      <table class="mytable">
+        <thead>
+          <th class="name">Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th id="th1">Total Price</th>
+        </thead>
+        <tbody>
+          <tr id="tr1">
+            <td>
+              <input type="text" placeholder="Name" id="n1" />
+            </td>
+            <td>
+              <input type="number" placeholder="Quantity" id="q1" />
+            </td>
+            <td>
+              <input type="number" placeholder="Price" id="p1" />
+            </td>
+
+            <td>
+              <input type="number" disabled placeholder="Total Price" id="t1" />
+            </td>
+            <td>
+              <button id="bt1" onclick="unhide(this.id,'tr2')">
+                Add Aonother
+              </button>
+            </td>
+          </tr>
+          <tr id="tr2">
+            <td>
+              <input type="text" placeholder="Name" id="n2" />
+            </td>
+            <td>
+              <input type="number" placeholder="Quantity" id="q2" />
+            </td>
+            <td>
+              <input type="number" placeholder="Price" id="p2" />
+            </td>
+            <td>
+              <input type="number" disabled placeholder="Total Price" id="t2" />
+            </td>
+            <td>
+              <button id="bt2" onclick="unhide(this.id,'tr3')">
+                Add Aonother
+              </button>
+            </td>
+          </tr>
+          <tr id="tr3">
+            <td>
+              <input type="text" placeholder="Name" id="n3" />
+            </td>
+            <td>
+              <input type="number" placeholder="Quantity" id="q3" />
+            </td>
+            <td>
+              <input type="number" placeholder="Price" id="p3" />
+            </td>
+            <td>
+              <input type="number" disabled placeholder="Total Price" id="t3" />
+            </td>
+            <td>
+              <button id="bt3" onclick="unhide(this.id,'tr4')">
+                Add Aonother
+              </button>
+            </td>
+          </tr>
+          <tr id="tr4">
+            <td>
+              <input type="text" placeholder="Name" id="n4" />
+            </td>
+            <td>
+              <input type="number" placeholder="Quantity" id="q4" />
+            </td>
+            <td>
+              <input type="number" placeholder="Price" id="p4" />
+            </td>
+            <td>
+              <input type="number" disabled placeholder="Total Price" id="t4" />
+            </td>
+            <td>
+              <button id="bt4" onclick="unhide(this.id,'tr5')">
+                Add Aonother
+              </button>
+            </td>
+          </tr>
+          <tr id="tr5">
+            <td>
+              <input type="text" placeholder="Name" id="n5" />
+            </td>
+            <td>
+              <input type="number" placeholder="Quantity" id="q5" />
+            </td>
+            <td>
+              <input type="number" placeholder="Price" id="p5" />
+            </td>
+            <td>
+              <input type="number" disabled placeholder="Total Price" id="t5" />
+            </td>
+            <td>
+              <button id="bt5" onclick="unhide(this.id,'tr6')">
+                Add Aonother
+              </button>
+            </td>
+          </tr>
+          <tr id="tr6">
+            <td>
+              <input type="text" placeholder="Name" id="n6" />
+            </td>
+            <td>
+              <input type="number" placeholder="Quantity" id="q6" />
+            </td>
+            <td>
+              <input type="number" placeholder="Price" id="p6" />
+            </td>
+            <td>
+              <input type="number" disabled placeholder="Total Price" id="t6" />
+            </td>
+            <td>
+              <button id="bt6" onclick="unhide(this.id,'tr7')">
+                Add Aonother
+              </button>
+            </td>
+          </tr>
+          <tr id="tr7">
+            <td>
+              <input type="text" placeholder="Name" id="n7" />
+            </td>
+            <td>
+              <input type="number" placeholder="Quantity" id="q7" />
+            </td>
+            <td>
+              <input type="number" placeholder="Price" id="p7" />
+            </td>
+            <td>
+              <input type="number" disabled placeholder="Total Price" id="t7" />
+            </td>
+            <td>
+              <button id="bt7" onclick="unhide(this.id,'tr8')">
+                Add Aonother
+              </button>
+            </td>
+          </tr>
+          <tr id="tr8">
+            <td>
+              <input type="text" placeholder="Name" id="n8" />
+            </td>
+            <td>
+              <input type="number" placeholder="Quantity" id="q8" />
+            </td>
+            <td>
+              <input type="number" placeholder="Price" id="p8" />
+            </td>
+            <td>
+              <input type="number" disabled placeholder="Total Price" id="t8" />
+            </td>
+            <td>
+              <button id="bt8" onclick="unhide(this.id,'tr9')">
+                Add Aonother
+              </button>
+            </td>
+          </tr>
+          <tr id="tr9">
+            <td>
+              <input type="text" placeholder="Name" id="n9" />
+            </td>
+            <td>
+              <input type="number" placeholder="Quantity" id="q9" />
+            </td>
+            <td>
+              <input type="number" placeholder="Price" id="p9" />
+            </td>
+            <td>
+              <input type="number" disabled placeholder="Total Price" id="t9" />
+            </td>
+            <td>
+              <button id="bt9" onclick="unhide(this.id,'tr10')">
+                Add Aonother
+              </button>
+            </td>
+          </tr>
+          <tr id="tr10">
+            <td>
+              <input type="text" placeholder="Name" id="n10" />
+            </td>
+            <td>
+              <input type="number" placeholder="Quantity" id="q10" />
+            </td>
+            <td>
+              <input type="number" placeholder="Price" id="p10" />
+            </td>
+            <td><button id="bt10">Add Aonother</button></td>
+            <td>
+              <input
+                type="number"
+                disabled
+                placeholder="Total Price"
+                id="t10"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <p id="tt">Total :</p>
+            </td>
+            <td>
+              <p id="tl">0</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="btn">
+        <button type="button" onclick="getInputValue();">
+          Calculate
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
