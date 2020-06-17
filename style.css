@@ -1,10 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
+  background-size: 400% 400%;
 }
-.container {
-  position: relative;
-}
-
 p {
   text-align: center;
 }
@@ -106,25 +103,32 @@ h2 {
 }
 
 .btn {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  align-items: center;
-  width: 80%;
+  display: block;
+}
+.container button {
+  border-radius: 10px;
+}
+.btn button {
+  border-radius: 20px;
 }
 input,
 button {
   width: 15rem;
   height: 3rem;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 button:hover {
   color: white;
-  background-color: rgb(21, 87, 21);
+  background-color: rgba(0, 128, 0, 0.705);
 }
 #tl {
   display: inline;
   font-size: 2em;
+}
+input {
+  border: 2px solid green;
+  border-radius: 4px;
+}
+button {
+  border: solid 2px green;
 }
