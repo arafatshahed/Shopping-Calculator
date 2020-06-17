@@ -44,8 +44,6 @@ function getInputValue() {
       document.getElementById(idTPrice[i]).style.display = "block";
     }
   }
-  document.getElementById("th1").style.display = "block";
-  document.getElementById("tt").style.display = "block";
   document.getElementById("tl").style.display = "block";
   /*var hd = "p1";
     // Selecting the input element and get its value
@@ -54,11 +52,10 @@ function getInputValue() {
 
     // Displaying the value
     //alert(inputVal);*/
+  total = "Total : " + total;
   document.getElementById("tl").innerHTML = total;
 }
 function myFunction() {
-  document.getElementById("th1").style.display = "none";
-  document.getElementById("tt").style.display = "none";
   document.getElementById("tl").style.display = "none";
   var idTPrice = [];
   var trname = [];
@@ -73,5 +70,5 @@ function myFunction() {
 }
 function unhide(idbtnp, trn) {
   document.getElementById(idbtnp).style.display = "none";
-  document.getElementById(trn).style.display = "table-row";
+  document.getElementById(trn).style.display = "flex";
 }
