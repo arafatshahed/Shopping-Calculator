@@ -1,11 +1,99 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+.container {
+  position: relative;
+}
+
 p {
   text-align: center;
 }
 input {
   text-align: center;
+}
+#tr1,
+#tr2,
+#tr3,
+#tr4,
+#tr5,
+#tr6,
+#tr7,
+#tr8,
+#tr9,
+#tr10 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+#tr1,
+#tr2,
+#tr3,
+#tr4,
+#tr5,
+#tr6,
+#tr7,
+#tr8,
+#tr9,
+#tr10 input {
+  margin: 5px;
+  justify-content: center;
+  justify-items: center;
+}
+#n1,
+#p1,
+#q1,
+#t1,
+#bt1,
+#n2,
+#p2,
+#q2,
+#t2,
+#bt2,
+#n3,
+#p3,
+#q3,
+#t3,
+#bt3,
+#n4,
+#p4,
+#q4,
+#t4,
+#bt4,
+#n5,
+#p5,
+#q5,
+#t5,
+#bt5,
+#n6,
+#p6,
+#q6,
+#t6,
+#bt6,
+#n7,
+#p7,
+#q7,
+#t7,
+#bt7,
+#n8,
+#p8,
+#q8,
+#t8,
+#bt8,
+#n9,
+#p9,
+#q9,
+#t9,
+#bt9,
+#n10,
+#p10,
+#q10,
+#bt10,
+#t1 {
+  width: 80%;
+  margin: 5px;
 }
 h2 {
   text-align: center;
@@ -13,40 +101,30 @@ h2 {
 .btn button {
   padding: 1em;
   font-size: 1.5em;
+  width: 20rem;
+  height: 6rem;
 }
-td {
-  height: 1.5em;
-  padding: 0.5em;
-}
+
 .btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  width: 80%;
 }
-th.name {
-  width: 10px;
-}
-.container {
-  position: relative;
-}
-.mytable {
-}
-input {
+input,
+button {
   width: 15rem;
   height: 3rem;
-}
-table button {
-  width: 15rem;
-  height: 3rem;
+  border-radius: 10px;
 }
 button:hover {
   color: white;
   background-color: rgb(21, 87, 21);
 }
-@media screen and (max-width: 600px) {
-  input {
-    width: 7.5rem;
-    height: 3rem;
-  }
-  table button {
-    width: 7.5rem;
-    height: 3rem;
-  }
+#tl {
+  display: inline;
+  font-size: 2em;
 }
