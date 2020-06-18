@@ -1,7 +1,28 @@
 body {
   font-family: "Open Sans", sans-serif;
-  background-size: 400% 400%;
 }
+
+.container {
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.container p {
+  font-size: 1.2em;
+}
+head {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header .logo {
+  float: left;
+}
+
 p {
   text-align: center;
 }
@@ -18,7 +39,6 @@ input {
 #tr8,
 #tr9,
 #tr10 {
-  display: flex;
   justify-content: center;
   justify-items: center;
   flex-direction: column;
@@ -40,53 +60,33 @@ input {
   justify-items: center;
 }
 #n1,
-#p1,
-#q1,
 #t1,
 #bt1,
 #n2,
-#p2,
-#q2,
 #t2,
 #bt2,
 #n3,
-#p3,
-#q3,
 #t3,
 #bt3,
 #n4,
-#p4,
-#q4,
 #t4,
 #bt4,
 #n5,
-#p5,
-#q5,
 #t5,
 #bt5,
 #n6,
-#p6,
-#q6,
 #t6,
 #bt6,
 #n7,
-#p7,
-#q7,
 #t7,
 #bt7,
 #n8,
-#p8,
-#q8,
 #t8,
 #bt8,
 #n9,
-#p9,
-#q9,
 #t9,
 #bt9,
 #n10,
-#p10,
-#q10,
 #bt10,
 #t1 {
   width: 80%;
@@ -132,4 +132,36 @@ input {
 }
 button {
   border: solid 2px green;
+}
+#q1,
+#q2,
+#q3,
+#q4,
+#q5,
+#q6,
+#q7,
+#q8,
+#q9,
+#q10 {
+  display: inline;
+  width: 39.5%;
+}
+#p1,
+#p2,
+#p3,
+#p4,
+#p5,
+#p6,
+#p7,
+#p8,
+#p9,
+#p10 {
+  width: 39.5%;
+}
+.logo img {
+  width: 100px;
+  margin: 10px;
+}
+.pti {
+  font-size: 2em;
 }

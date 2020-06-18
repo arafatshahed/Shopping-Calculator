@@ -1,9 +1,9 @@
 {
   "name": "Shopping Calculator",
-  "short_name": "ShoppingCal",
+  "short_name": "Shopping Calculator",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#fff",
+  "background_color": "#24252a",
   "description": "Shopping Calculator For Pacific Trade International.",
   "icons": [
     {

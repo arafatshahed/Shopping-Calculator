@@ -41,7 +41,7 @@ function getInputValue() {
     if (tprice[i] == 0) {
       document.getElementById(trname[i]).style.display = "none";
     } else {
-      document.getElementById(idTPrice[i]).style.display = "block";
+      document.getElementById(idTPrice[i]).style.display = "unset";
     }
   }
   document.getElementById("tl").style.display = "block";
@@ -54,6 +54,8 @@ function getInputValue() {
     //alert(inputVal);*/
   total = "Total : " + total;
   document.getElementById("tl").innerHTML = total;
+  document.getElementById("refresh").style.display = "unset";
+  document.getElementById("save").style.display = "unset";
 }
 function myFunction() {
   document.getElementById("tl").style.display = "none";
@@ -67,8 +69,22 @@ function myFunction() {
     trname[i] = "tr" + (i + 1);
     document.getElementById(trname[i]).style.display = "none";
   }
+  document.getElementById("refresh").style.display = "none";
+  document.getElementById("save").style.display = "none";
 }
 function unhide(idbtnp, trn) {
+  var strp, strq, strt;
+  strp = "p" + idbtnp[2];
+  strq = "q" + idbtnp[2];
+  strt = "t" + idbtnp[2];
+  var valp, valq, valt;
+  valp = document.getElementById(strp).value;
+  valq = document.getElementById(strq).value;
+  valt = valp * valq;
+  console.log(valp);
+  console.log(valq);
+  document.getElementById(strt).value = valt;
+  document.getElementById(strt).style.display = "unset";
   document.getElementById(idbtnp).style.display = "none";
-  document.getElementById(trn).style.display = "flex";
+  document.getElementById(trn).style.display = "block";
 }

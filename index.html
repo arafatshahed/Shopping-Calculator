@@ -21,10 +21,17 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body onload="myFunction()">
+    <header>
+      <div class="logo"><img src="./images/logo.png" alt="logo"></div>
+      <div class="comp">
+      <p class="pti">Pacific Trade International</p>
+      <p>80/4, Saydabad, Dhaka-1204. Mobile-01715823431, 01916939369</p>
+    </div>
+  </header>
     <div class="container">
-      <h2>Pacific Trade International</h2>
+      
       <div id="tr1">
-        <h4>Item 1</h4>
+        <p>Item 1</p>
         <input type="text" placeholder="Name" id="n1" />
         <input type="number" placeholder="Quantity" id="q1" />
         <input type="number" placeholder="Price" id="p1" />
@@ -32,7 +39,7 @@
         <button id="bt1" onclick="unhide(this.id,'tr2')">Add Aonother</button>
       </div>
       <div id="tr2">
-        <h4>Item 2</h4>
+        <p>Item 2</p>
         <input type="text" placeholder="Name" id="n2" />
         <input type="number" placeholder="Quantity" id="q2" />
         <input type="number" placeholder="Price" id="p2" />
@@ -40,7 +47,7 @@
         <button id="bt2" onclick="unhide(this.id,'tr3')">Add Aonother</button>
       </div>
       <div id="tr3">
-        <h4>Item 3</h4>
+        <p>Item 3</p>
         <input type="text" placeholder="Name" id="n3" />
         <input type="number" placeholder="Quantity" id="q3" />
         <input type="number" placeholder="Price" id="p3" />
@@ -48,7 +55,7 @@
         <button id="bt3" onclick="unhide(this.id,'tr4')">Add Aonother</button>
       </div>
       <div id="tr4">
-        <h4>Item 4</h4>
+        <p>Item 4</p>
         <input type="text" placeholder="Name" id="n4" />
         <input type="number" placeholder="Quantity" id="q4" />
         <input type="number" placeholder="Price" id="p4" />
@@ -56,7 +63,7 @@
         <button id="bt4" onclick="unhide(this.id,'tr5')">Add Aonother</button>
       </div>
       <div id="tr5">
-        <h4>Item 5</h4>
+        <p>Item 5</p>
         <input type="text" placeholder="Name" id="n5" />
         <input type="number" placeholder="Quantity" id="q5" />
         <input type="number" placeholder="Price" id="p5" />
@@ -64,7 +71,7 @@
         <button id="bt5" onclick="unhide(this.id,'tr6')">Add Aonother</button>
       </div>
       <div id="tr6">
-        <h4>Item 6</h4>
+        <p>Item 6</p>
         <input type="text" placeholder="Name" id="n6" />
         <input type="number" placeholder="Quantity" id="q6" />
         <input type="number" placeholder="Price" id="p6" />
@@ -72,7 +79,7 @@
         <button id="bt6" onclick="unhide(this.id,'tr7')">Add Aonother</button>
       </div>
       <div id="tr7">
-        <h4>Item 7</h4>
+        <p>Item 7</p>
         <input type="text" placeholder="Name" id="n7" />
         <input type="number" placeholder="Quantity" id="q7" />
         <input type="number" placeholder="Price" id="p7" />
@@ -80,7 +87,7 @@
         <button id="bt7" onclick="unhide(this.id,'tr8')">Add Aonother</button>
       </div>
       <div id="tr8">
-        <h4>Item 8</h4>
+        <p>Item 8</p>
         <input type="text" placeholder="Name" id="n8" />
         <input type="number" placeholder="Quantity" id="q8" />
         <input type="number" placeholder="Price" id="p8" />
@@ -88,14 +95,14 @@
         <button id="bt8" onclick="unhide(this.id,'tr9')">Add Aonother</button>
       </div>
       <div id="tr9">
-        <h4>Item 9</h4>
+        <p>Item 9</p>
         <input type="text" placeholder="Name" id="n9" />
         <input type="number" placeholder="Quantity" id="q9" />
         <input type="number" placeholder="Price" id="p9" />
         <input type="number" disabled placeholder="Total Price" id="t9" />Add Aonother</button>
       </div>
       <div id="tr10">
-        <h4>Item 10</h4>
+        <p>Item 10</p>
         <input type="text" placeholder="Name" id="n10" />
         <input type="number" placeholder="Quantity" id="q10" />
         <input type="number" placeholder="Price" id="p10" />
@@ -108,7 +115,10 @@
       
       <div class="btn" style="display: block;">
         <button type="button" onclick="getInputValue();"> Calculate</button>
+        <button type="button" onclick="location.reload();" id="refresh"> Refresh</button>
+        <button type="button" onclick="window.print();" id="save"> Save</button>
       </div>
+
     </div>
   </body>
 </html>
