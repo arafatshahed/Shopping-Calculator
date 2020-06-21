@@ -29,66 +29,23 @@ p {
 input {
   text-align: center;
 }
-#tr1,
-#tr2,
-#tr3,
-#tr4,
-#tr5,
-#tr6,
-#tr7,
-#tr8,
-#tr9,
-#tr10 {
+.item {
   justify-content: center;
   justify-items: center;
   flex-direction: column;
   text-align: center;
   align-items: center;
 }
-#tr1,
-#tr2,
-#tr3,
-#tr4,
-#tr5,
-#tr6,
-#tr7,
-#tr8,
-#tr9,
-#tr10 input {
-  margin: 5px;
+.item input {
+  margin: 0.3rem;
   justify-content: center;
   justify-items: center;
 }
-#n1,
-#t1,
-#bt1,
-#n2,
-#t2,
-#bt2,
-#n3,
-#t3,
-#bt3,
-#n4,
-#t4,
-#bt4,
-#n5,
-#t5,
-#bt5,
-#n6,
-#t6,
-#bt6,
-#n7,
-#t7,
-#bt7,
-#n8,
-#t8,
-#bt8,
-#n9,
-#t9,
-#bt9,
-#n10,
-#bt10,
-#t1 {
+.fullbox {
+  width: 80%;
+  margin: 5px;
+}
+.btnb {
   width: 80%;
   margin: 5px;
 }
@@ -133,29 +90,11 @@ input {
 button {
   border: solid 2px green;
 }
-#q1,
-#q2,
-#q3,
-#q4,
-#q5,
-#q6,
-#q7,
-#q8,
-#q9,
-#q10 {
+.half1 {
   display: inline;
   width: 39.5%;
 }
-#p1,
-#p2,
-#p3,
-#p4,
-#p5,
-#p6,
-#p7,
-#p8,
-#p9,
-#p10 {
+.half2 {
   width: 39.5%;
 }
 .logo img {

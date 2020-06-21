@@ -45,18 +45,12 @@ function getInputValue() {
     }
   }
   document.getElementById("tl").style.display = "block";
-  /*var hd = "p1";
-    // Selecting the input element and get its value
-    var inputVal = document.getElementById(hd).value;
-    document.write(inputVal);
-
-    // Displaying the value
-    //alert(inputVal);*/
-  total = "Total : " + total;
+  total = "Total : " + total + " /=";
   document.getElementById("tl").innerHTML = total;
   document.getElementById("refresh").style.display = "unset";
   document.getElementById("save").style.display = "unset";
 }
+
 function myFunction() {
   document.getElementById("tl").style.display = "none";
   var idTPrice = [];

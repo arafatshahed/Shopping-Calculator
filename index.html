@@ -22,103 +22,181 @@
   </head>
   <body onload="myFunction()">
     <header>
-      <div class="logo"><img src="./images/logo.png" alt="logo"></div>
+      <div class="logo"><img src="./images/logo.png" alt="logo" /></div>
       <div class="comp">
-      <p class="pti">Pacific Trade International</p>
-      <p>80/4, Saydabad, Dhaka-1204. Mobile-01715823431, 01916939369</p>
-    </div>
-  </header>
-    <div class="container">
-      
-      <div id="tr1">
-        <p>Item 1</p>
-        <input type="text" placeholder="Name" id="n1" />
-        <input type="number" placeholder="Quantity" id="q1" />
-        <input type="number" placeholder="Price" id="p1" />
-        <input type="number" disabled placeholder="Total Price" id="t1" />
-        <button id="bt1" onclick="unhide(this.id,'tr2')">Add Aonother</button>
+        <p class="pti">Pacific Trade International</p>
+        <p>80/4, Saydabad, Dhaka-1204. Mobile-01715823431, 01916939369</p>
       </div>
-      <div id="tr2">
+    </header>
+    <div class="container">
+      <div id="tr1" class="item">
+        <p>Item 1</p>
+        <input class="fullbox" type="text" placeholder="Name" id="n1" />
+        <input class="half1" type="number" placeholder="Quantity" id="q1" />
+        <input class="half2" type="number" placeholder="Price" id="p1" />
+        <input
+          class="fullbox"
+          type="number"
+          disabled
+          placeholder="Total Price"
+          id="t1"
+        />
+        <button class="btnb" id="bt1" onclick="unhide(this.id,'tr2')">
+          Add Aonother
+        </button>
+      </div>
+      <div id="tr2" class="item">
         <p>Item 2</p>
-        <input type="text" placeholder="Name" id="n2" />
-        <input type="number" placeholder="Quantity" id="q2" />
-        <input type="number" placeholder="Price" id="p2" />
-        <input type="number" disabled placeholder="Total Price" id="t2" />
-        <button id="bt2" onclick="unhide(this.id,'tr3')">Add Aonother</button>
+        <input class="fullbox" type="text" placeholder="Name" id="n2" />
+        <input class="half1" type="number" placeholder="Quantity" id="q2" />
+        <input class="half2" type="number" placeholder="Price" id="p2" />
+        <input
+          class="fullbox"
+          type="number"
+          disabled
+          placeholder="Total Price"
+          id="t2"
+        />
+        <button class="btnb" id="bt2" onclick="unhide(this.id,'tr3')">
+          Add Aonother
+        </button>
       </div>
       <div id="tr3">
         <p>Item 3</p>
-        <input type="text" placeholder="Name" id="n3" />
-        <input type="number" placeholder="Quantity" id="q3" />
-        <input type="number" placeholder="Price" id="p3" />
-        <input type="number" disabled placeholder="Total Price" id="t3" />
-        <button id="bt3" onclick="unhide(this.id,'tr4')">Add Aonother</button>
+        <input class="fullbox" type="text" placeholder="Name" id="n3" />
+        <input class="half1" type="number" placeholder="Quantity" id="q3" />
+        <input class="half2" type="number" placeholder="Price" id="p3" />
+        <input
+          class="fullbox"
+          type="number"
+          disabled
+          placeholder="Total Price"
+          id="t3"
+        />
+        <button class="btnb" id="bt3" onclick="unhide(this.id,'tr4')">
+          Add Aonother
+        </button>
       </div>
-      <div id="tr4">
+      <div id="tr4" class="item">
         <p>Item 4</p>
-        <input type="text" placeholder="Name" id="n4" />
-        <input type="number" placeholder="Quantity" id="q4" />
-        <input type="number" placeholder="Price" id="p4" />
-        <input type="number" disabled placeholder="Total Price" id="t4" />
-        <button id="bt4" onclick="unhide(this.id,'tr5')">Add Aonother</button>
+        <input class="fullbox" type="text" placeholder="Name" id="n4" />
+        <input class="half1" type="number" placeholder="Quantity" id="q4" />
+        <input class="half2" type="number" placeholder="Price" id="p4" />
+        <input
+          class="fullbox"
+          type="number"
+          disabled
+          placeholder="Total Price"
+          id="t4"
+        />
+        <button class="btnb" id="bt4" onclick="unhide(this.id,'tr5')">
+          Add Aonother
+        </button>
       </div>
-      <div id="tr5">
+      <div id="tr5" class="item">
         <p>Item 5</p>
-        <input type="text" placeholder="Name" id="n5" />
-        <input type="number" placeholder="Quantity" id="q5" />
-        <input type="number" placeholder="Price" id="p5" />
-        <input type="number" disabled placeholder="Total Price" id="t5" />
-        <button id="bt5" onclick="unhide(this.id,'tr6')">Add Aonother</button>
+        <input class="fullbox" type="text" placeholder="Name" id="n5" />
+        <input class="half1" type="number" placeholder="Quantity" id="q5" />
+        <input class="half2" type="number" placeholder="Price" id="p5" />
+        <input
+          class="fullbox"
+          type="number"
+          disabled
+          placeholder="Total Price"
+          id="t5"
+        />
+        <button class="btnb" id="bt5" onclick="unhide(this.id,'tr6')">
+          Add Aonother
+        </button>
       </div>
-      <div id="tr6">
+      <div id="tr6" class="item">
         <p>Item 6</p>
-        <input type="text" placeholder="Name" id="n6" />
-        <input type="number" placeholder="Quantity" id="q6" />
-        <input type="number" placeholder="Price" id="p6" />
-        <input type="number" disabled placeholder="Total Price" id="t6" />
-        <button id="bt6" onclick="unhide(this.id,'tr7')">Add Aonother</button>
+        <input class="fullbox" type="text" placeholder="Name" id="n6" />
+        <input class="half1" type="number" placeholder="Quantity" id="q6" />
+        <input class="half2" type="number" placeholder="Price" id="p6" />
+        <input
+          class="fullbox"
+          type="number"
+          disabled
+          placeholder="Total Price"
+          id="t6"
+        />
+        <button class="btnb" id="bt6" onclick="unhide(this.id,'tr7')">
+          Add Aonother
+        </button>
       </div>
-      <div id="tr7">
+      <div id="tr7" class="item">
         <p>Item 7</p>
-        <input type="text" placeholder="Name" id="n7" />
-        <input type="number" placeholder="Quantity" id="q7" />
-        <input type="number" placeholder="Price" id="p7" />
-        <input type="number" disabled placeholder="Total Price" id="t7" />
-        <button id="bt7" onclick="unhide(this.id,'tr8')">Add Aonother</button>
+        <input class="fullbox" type="text" placeholder="Name" id="n7" />
+        <input class="half1" type="number" placeholder="Quantity" id="q7" />
+        <input class="half2" type="number" placeholder="Price" id="p7" />
+        <input
+          class="fullbox"
+          type="number"
+          disabled
+          placeholder="Total Price"
+          id="t7"
+        />
+        <button class="btnb" id="bt7" onclick="unhide(this.id,'tr8')">
+          Add Aonother
+        </button>
       </div>
-      <div id="tr8">
+      <div id="tr8" class="item">
         <p>Item 8</p>
-        <input type="text" placeholder="Name" id="n8" />
-        <input type="number" placeholder="Quantity" id="q8" />
-        <input type="number" placeholder="Price" id="p8" />
-        <input type="number" disabled placeholder="Total Price" id="t8" />
-        <button id="bt8" onclick="unhide(this.id,'tr9')">Add Aonother</button>
+        <input class="fullbox" type="text" placeholder="Name" id="n8" />
+        <input class="half1" type="number" placeholder="Quantity" id="q8" />
+        <input class="half2" type="number" placeholder="Price" id="p8" />
+        <input
+          class="fullbox"
+          type="number"
+          disabled
+          placeholder="Total Price"
+          id="t8"
+        />
+        <button class="btnb" id="bt8" onclick="unhide(this.id,'tr9')">
+          Add Aonother
+        </button>
       </div>
-      <div id="tr9">
+      <div id="tr9" class="item">
         <p>Item 9</p>
-        <input type="text" placeholder="Name" id="n9" />
-        <input type="number" placeholder="Quantity" id="q9" />
-        <input type="number" placeholder="Price" id="p9" />
-        <input type="number" disabled placeholder="Total Price" id="t9" />Add Aonother</button>
+        <input class="fullbox" type="text" placeholder="Name" id="n9" />
+        <input class="half1" type="number" placeholder="Quantity" id="q9" />
+        <input class="half2" type="number" placeholder="Price" id="p9" />
+        <input
+          class="fullbox"
+          type="number"
+          disabled
+          placeholder="Total Price"
+          id="t9"
+        />
+        <button class="btnb" id="bt8" onclick="unhide(this.id,'tr10')">
+          Add Aonother
+        </button>
       </div>
-      <div id="tr10">
+      <div id="tr10" class="item">
         <p>Item 10</p>
-        <input type="text" placeholder="Name" id="n10" />
-        <input type="number" placeholder="Quantity" id="q10" />
-        <input type="number" placeholder="Price" id="p10" />
-        <button id="bt10">Add Aonother</button>
-        <input type="number" disabled placeholder="Total Price" id="t10" />
+        <input class="fullbox" type="text" placeholder="Name" id="n10" />
+        <input class="half1" type="number" placeholder="Quantity" id="q10" />
+        <input class="half2" type="number" placeholder="Price" id="p10" />
+        <input
+          class="fullbox"
+          type="number"
+          disabled
+          placeholder="Total Price"
+          id="t10"
+        />
       </div>
       <div>
         <p id="tl">0</p>
       </div>
-      
-      <div class="btn" style="display: block;">
-        <button type="button" onclick="getInputValue();"> Calculate</button>
-        <button type="button" onclick="location.reload();" id="refresh"> Refresh</button>
-        <button type="button" onclick="window.print();" id="save"> Save</button>
-      </div>
 
+      <div class="btn" style="display: block;">
+        <button type="button" onclick="getInputValue();">Calculate</button>
+        <button type="button" onclick="location.reload();" id="refresh">
+          Refresh
+        </button>
+        <button type="button" onclick="window.print();" id="save">Save</button>
+      </div>
     </div>
   </body>
 </html>
