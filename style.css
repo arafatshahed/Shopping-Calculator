@@ -42,7 +42,6 @@ input {
   justify-items: center;
 }
 .fullbox {
-  width: 80%;
   margin: 5px;
 }
 .btnb {
@@ -90,12 +89,11 @@ input {
 button {
   border: solid 2px green;
 }
-.half1 {
+.half1,
+.half2,
+.fullbox {
   display: inline;
-  width: 39.5%;
-}
-.half2 {
-  width: 39.5%;
+  width: 20%;
 }
 .logo img {
   width: 100px;
@@ -103,4 +101,29 @@ button {
 }
 .pti {
   font-size: 2em;
+}
+#tr0 {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .fullbox {
+    width: 80%;
+    margin: 5px;
+  }
+  .half1 {
+    display: inline;
+    width: 39.5%;
+  }
+  .half2 {
+    width: 39.5%;
+  }
+}
+@media print {
+  .btn,
+  .btnb {
+    visibility: hidden;
+  }
+  #tr0 {
+    display: block;
+  }
 }

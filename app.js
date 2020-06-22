@@ -49,6 +49,72 @@ function getInputValue() {
   document.getElementById("tl").innerHTML = total;
   document.getElementById("refresh").style.display = "unset";
   document.getElementById("save").style.display = "unset";
+
+  /*getFullYear()	Get the year as a four digit number (yyyy)
+  getMonth()	Get the month as a number (0-11)
+  getDate()	Get the day as a number (1-31)
+  getHours()	Get the hour (0-23)
+  getMinutes()	Get the minute (0-59)
+  getSeconds()*/
+  var months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  var days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  var date = new Date();
+  var cYear = date.getFullYear();
+  var cMonth = months[date.getMonth()];
+  var cDate = date.getDate();
+  var cDay = days[date.getDay()];
+  var cHour = date.getHours();
+  var cMinute = date.getMinutes();
+  var cSeconds = date.getSeconds();
+  console.log(date);
+  if (cHour == 0) cHour += 12;
+  if (cHour > 12) {
+    ap = " PM";
+    cHour -= 12;
+  } else {
+    var ap = " AM";
+  }
+  var fDate =
+    cDay +
+    " " +
+    cDate +
+    " " +
+    cMonth +
+    " " +
+    cYear +
+    " " +
+    cHour +
+    ":" +
+    cMinute +
+    ":" +
+    cSeconds +
+    ap;
+  console.log(fDate);
+  document.getElementById("curDate").innerHTML = fDate;
+  var title;
+  title = "Hisheb " + fDate;
+  document.title = title;
 }
 
 function myFunction() {
